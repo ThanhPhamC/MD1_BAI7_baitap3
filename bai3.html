@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+  .table{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+<form action="">
+  <table class="table" border="1">
+    <tr>
+      <td colspan="2" ><input value="" id="nhapSo1" placeholder="nhapSo1" ></td>
+      <td colspan="2"><input value="" id="nhapSo2" placeholder="nhapSo2" ></td>
+    </tr>
+    <tr>
+      <td> <button onclick="cong()" >Adition(+)</button></td>
+      <td> <button onclick="tru()" >Subtraction(-)</button></td>
+      <td> <button onclick="nhan()" >Multiplication(X)</button></td>
+      <td> <button onclick="chia()">Division(/)</button></td>
+    </tr>
+<tr>
+  <td colspan > Kết Quả Là : </td>
+  <td colspan="3" id="ketQua" ></td>
+</tr>
+    <script>
+      function cong() {
+       let x = +document.getElementById("nhapSo1").value;
+       let y = +document.getElementById("nhapSo2").value;
+       document.getElementById("ketQua").innerHTML= x + y ;}
+      function tru() {
+        let x = +document.getElementById("nhapSo1").value;
+        let y = +document.getElementById("nhapSo2").value;
+        document.getElementById("ketQua").innerHTML= x - y ;
+      }
+      function cong() {
+        let x = +document.getElementById("nhapSo1").value;
+        let y = +document.getElementById("nhapSo2").value;
+        document.getElementById("ketQua").innerHTML= x * y ;
+      }
+      function cong() {
+        let x = +document.getElementById("nhapSo1").value;
+        let y = +document.getElementById("nhapSo2").value;
+        document.getElementById("ketQua").innerHTML= x / y ;
+      }
+    </script>
+
+  </table>
+</form>
+</body>
+</html>
